@@ -1,0 +1,16 @@
+{
+    "configurations": [
+      {
+        "name": "Launch",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "preLaunchTask": "cmake-build-all",
+        "program": "${workspaceFolder}/bin/emu8080.exe",
+        "args": ["-f", "${workspaceFolder}/test.bin", "-i", "100", "-s", "0x0", "-o", "0x0", "-d", "0"],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "console": "externalTerminal"
+      }
+    ]
+  }
