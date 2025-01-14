@@ -4,9 +4,11 @@
 
 #ifdef __linux__
 #include <unistd.h>
+#include <time.h>
+#include <errno.h>
 #endif
 
-void sleep(int ms)
+void SleepMilli(int ms)
 {
     #ifdef _WIN32
     Sleep(ms);

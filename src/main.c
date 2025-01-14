@@ -79,7 +79,7 @@ int main(int argc, char** argv)
     {
         Step(&sys);
         if (stepInterval != 0)
-            sleep(stepInterval);
+            SleepMilli(stepInterval);
     }
 
     return 0;
